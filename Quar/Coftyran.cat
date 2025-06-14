@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="New Entry" hidden="false" id="528f-29fc-4aca-9939" defaultAmount="1">
+    <selectionEntry type="unit" import="true" name="is-Caerten" hidden="false" id="528f-29fc-4aca-9939" defaultAmount="1">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
       </costs>
@@ -12,8 +12,27 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="2a38-dcf2-13d6-b6ad" primary="false" name="Unit"/>
       </categoryLinks>
       <profiles>
-        <profile name="Is-Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="bc88-2f2f-61d7-810e"/>
+        <profile name="Is-Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="bc88-2f2f-61d7-810e">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6+1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/5), Melee (+1)</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Pistol" id="1ac1-5234-235c-01ea" hidden="false" type="profile" targetId="99bd-7fcc-169d-3745"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile name="Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="99bd-7fcc-169d-3745">
+      <characteristics>
+        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
+<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
   <categoryEntries>
     <categoryEntry name="Unit" id="de6b-6ec2-9294-541d" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry name="Default Force" hidden="false" id="default-force">
+    <forceEntry name="Army" hidden="false" id="default-force">
       <categoryLinks>
-        <categoryLink name="Unit" hidden="false" id="default-force-category-link" targetId="de6b-6ec2-9294-541d" type="categoryEntry"/>
+        <categoryLink name="Unit" hidden="false" id="default-force-category-link" targetId="de6b-6ec2-9294-541d"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -21,9 +21,200 @@
     <costType name="Points" id="0bc1-1233-3e53-72ca" defaultCostLimit="300"/>
   </costTypes>
   <profileTypes>
-    <profileType name="Unit" id="7040-9c4e-1119-a3c5" hidden="false"/>
+    <profileType name="Unit" id="7040-9c4e-1119-a3c5" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Sk" id="0014-9871-f278-b5f3"/>
+        <characteristicType name="Mt" id="d8ef-e518-8f49-8a7b"/>
+        <characteristicType name="MA" id="4cd7-b825-6660-1758"/>
+        <characteristicType name="Toughness" id="197d-1c5e-af24-ee6e"/>
+        <characteristicType name="Special Abilities" id="94ec-89a2-8f77-66c3"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Weapon" id="0b63-6947-fb08-66eb" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Range" id="5b6c-828e-fe65-26a5"/>
+        <characteristicType name="SN" id="b1d6-1660-ac56-c22a"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedRules>
-    <rule name="New Rule" id="0de6-c532-1b9e-df58" hidden="false"/>
+    <rule name="Medic" id="0de6-c532-1b9e-df58" hidden="false">
+      <description>These rhyflers are better trained to patch up minor wounds and get their comrades back on the battlefield. Medics add one to their roll when performing the Tend Wounded Task. If the Medic is a Cook they may also perform Tend Wounded on all rhyflers within 2” with one Task, as the smell of a warm meal raises spirits among the troops.</description>
+    </rule>
+    <rule name="Musician" id="822d-00b5-a47a-4529" hidden="false">
+      <description>A rhyfler with this ability may perform the following Task. Rallying Song – Armed with instruments instead of sidearms, musicians inspire their fellow rhyflers to pull themselves together and get back into the fight. A Ready rhyfler with the Musician ability may Recover every friendly, Gobsmacked rhyflers within X, changing their status to Ready.</description>
+    </rule>
+    <rule name="Scout (X/Y)" id="0d68-8b95-5793-02aa" hidden="false">
+      <description>More at home in the field than with their peers, these rhyflers can move quickly through even the roughest terrain. Scout allows the rhyfler to perform the Group Movement Task as if it had the Leader ability. This move does not suffer penalties due to difficult terrain.
+A Scout may also perform the following Task.
+Scouting Party – At the beginning of the Battle, before the first Round, the Scout may spend 1 Pluck to perform a special Group Movement Task, in which themselves and X other Rhyflers within Y inches may move up to their full Movement Allowance. All rhyflers performing this Task must end the move in Cover or go Prone. Rhyflers do not suffer movement penalties from difficult terrain when performing this move.</description>
+    </rule>
+    <rule name="Spotter" id="7419-1da6-0aea-bb1d" hidden="false">
+      <description>While gathering your Patrol this rhyfler is assigned to another specialist with the same Profile name. For example, an RCO Spotter can be assigned to an RCO Gunner. When the specialist performs a Skill Check for a Combat Task they may re-roll the highest die. If they do, this counts as the Spotter’s Combat Task for the Round.
+Design note: In the case of the RCO, either the Loader or the Spotter can act as the second crew member for Crewed. If you have taken both, consider the second a spare!</description>
+    </rule>
+    <rule name="Standard" id="2437-22be-ccb6-5ef4" hidden="false">
+      <description>Any rhyfler within 4” of their Patrol’s standard bearer doubles the amount of Pluck they gain from taking opponents Out of Action or completing mission objectives.
+If a standard bearer is Gobsmacked they will cling to the standard whatever the situation (that’s why they were chosen, after all). If the bearer is taken Out of Action the standard falls to the ground and may be picked up by any adjacent rhyfler who spends an Activation to do so. Any rhyfler who picks up their sides’ standard gains the Standard Special Ability. If an enemy rhyfler captures it, the standard’s commander gives them 3 Pluck, or all that is available. If the original owner regains their standard they take back 3 Pluck, or all that remains.</description>
+    </rule>
+    <rule name="Anti-Tractor (X)" id="7cb8-57db-5ced-b54a" hidden="false">
+      <description>The munitions carried by some tractors are designed to take their opposing brethren off the battlefield as quickly as possible. Weapons with this ability lower the target’s armor value by X when determining the result of a Might roll.</description>
+    </rule>
+    <rule name="Creature" id="cc28-67f0-d116-2b5d" hidden="false">
+      <description>Utilizing natural weapons such as claws or teeth, these beast are very effective against soft targets. This unit cannot attack units with an armor value.</description>
+    </rule>
+    <rule name="Critter Wrangler" id="bf13-7d8d-e01d-98dc" hidden="false">
+      <description>It takes a brave quar to even get near the more lethal fauna of Alwyd, much less train them. If your Patrol contains a rhyfler with this ability Sarf-cyn units you control are treated as though they do not have the Wild Rule. If the rhyfler with this ability goes OOA, the Sarf-cyn regain their Wild status.</description>
+    </rule>
+    <rule name="Trapper" id="c25b-9c23-0937-88eb" hidden="false">
+      <description>During deployment, a commander may deploy 5 numbered trap markers for each Trapper in their force. Trap markers are 25mm diameter counters. Record 2 of these to be decoys, while the remaining 3 may be any combination of Alarm, Snap, or Tank Traps.
+When an enemy unit moves within 2” of a trap marker, the commander that controls the trap reveals it. If it was a decoy, no further effect occurs. If it was not a decoy, resolve the trap as per type.
+Alarm Trap – Gloam Hyyn trappers utilize a system of tripwires and bells to keep tabs on prey, beast and Quar alike. This trap may be triggered by any type of unit. When triggered, the closest friendly Rhyfler to the trap marker gains the Overwatch status, then the trap marker is removed.
+Tractor Trap – With the introduction of tractors, Gloamers realized the metallic behemoths were vulnerable at the legs like any other beast, developing tread cracking explosives to hobble their quarry. This
+trap may only be triggered by a tractor. If revealed by a different type of unit, it is considered disarmed and has no effect. The triggering tractor suffers a 2d6 Might attack against its treads, then the trap marker is removed.
+Snap Trap – Gloamers are known to re-purpose snap traps designed for fauna much larger than Quar for use on the battlefield. This trap may only be triggered by a non-tractor unit (such as a Rhyfler or beast). If triggered by a tractor, it is considered disarmed and has no effect. The triggering unit suffers the effect rolled on the Snap Trap chart. The trap marker is then removed.</description>
+    </rule>
+    <rule name="Wild" id="8786-597b-8de7-d282" hidden="false">
+      <description>Ruled by instinct, some creatures are hard to control; best to let them loose and hope they are pointed at the enemy. A Wild unit may not be chosen to Activate normally. Instead, at the end of their controller’s Round, each Wild unit may immediately perform one of the following Tasks:
+• Standard Movement towards the nearest rhyfler, friendly or enemy.
+• Melee attack against a model they are engaged with (friendly or enemy).
+• Recover if Gobsmacked.</description>
+    </rule>
+    <rule name="Braced" id="0b83-b784-dae8-503c" hidden="false">
+      <description>Weapons with bipods and heavy rifles sometimes require physical support to fire accurately. When these weapons fire they subtract -1 from Skill unless the firing unit is Prone or base-to-base with terrain providing cover.</description>
+    </rule>
+    <rule name="Crew(x)" id="347d-a826-eeb9-9b94" hidden="false">
+      <description>The number of rhyflers required to operate this weapon is equal to X, called a Crew. To make a Ranged Attack all Crew must be Ready or on Overwatch, as well as in base-to-base contact with the weapon. If size of the Crew drops below X the Skill of the Rhyfler operating the weapon is at a -2 penalty. Firing the Crewed weapon counts as a combat action for the entire crew.
+Crew Move - Weapon Crew may perform a Group Movement action as if they have a leader</description>
+    </rule>
+    <rule name="Gun Shield" id="debb-db2c-1545-a131" hidden="false">
+      <description>Some crewed weapons are equipped with a gun shield to protect the crew from incoming fire. A Gun Shield provides cover for the Crew(X) of the weapon. Crewmembers within 1” of the weapon benefit from a -2 Cover Modifier.</description>
+    </rule>
+    <rule name="Heavy (X,Y)" id="4003-0b0e-9906-58c4" hidden="false">
+      <description>Cannons, wounded comrades and crates of grenades are all more than one Quar can handle. If X rhyflers are adjacent to the Heavy object it may be moved Y inches with a Standard Movement Task. This movement requires only one Activation, but counts as one Task for each rhyfler involved. Rhyflers moving a Heavy object cannot perform the Sprint Movement Task.</description>
+    </rule>
+    <rule name="Large Caliber" id="8eb8-8a48-5420-a303" hidden="false">
+      <description>Weapons that use larger rounds are more effective versus rhyflers in cover, Tractors, and other obstacles. Large Caliber weapons ignore Light Cover and reduce standard Cover by -1. Tractors hit by Large Caliber weapons suffer a 1d6+2 Might roll.</description>
+    </rule>
+    <rule name="Grafaenk Mk4 Lance" id="9bca-a0a1-75d8-4d95" hidden="false">
+      <description>Brave young Fidwog rhyflers have been known to take to the field armed with the devastating yet dangerous Mk4 Lance. The Grafaenk is designed to breach the hull of tractors with a magnetically activated trigger, but due to size of its payload it must be thrown by a rhyfler from a very close distance.
+Throw Lance(Prime Explosive) - The rhyfler performing this Task must first declare a target tractor; such is the cost of these devices that they are never used against soft targets.
+The attacking rhyfler then makes a 3” Move straight toward the target, ending within 6” of the tractor, and throws the weapon. This quick little run provides the rhyfler a -2 cover modifier against Reaction Fire.
+The rhyfler then rolls on the Grafaenk Mk4 Lance chart. If the attacker is successfully hit by a reaction, continue the Task, but read one row lower on the chart. After the Task is over, apply the results of the Reaction to the rhyfler.</description>
+    </rule>
+    <rule name="Scattergun" id="1bbc-4d05-2fec-3696" hidden="false">
+      <description>Scatterguns may be fired as normal but not beyond one Range Band. A Scattergun may also be Volley Fired.
+Volley Fire(Prepared) - This attack targets all rhyflers, friend or foe, in the weapon’s effect area, or Zone. This Zone is one inch wide and is a line that extends a single Range Band from the Rhyfler’s base to the final target.
+Consult the Scattergun Outcome table before any to-hit rolls are made. If the firing model is still active, conduct individual Ranged Attacks against each model in the line of fire. Volley Fire may only be Reacted to by Diving for Cover.</description>
+    </rule>
+    <rule name="Select Fire(X)" id="8c44-111c-27c4-4a9b" hidden="false">
+      <description>Submachine guns, and some Light Machineguns, are capable of firing smaller, controlled bursts than their larger cousins, resulting in more accuracy, albeit against fewer targets. This weapon may perform a Ranged Attack against up to X enemy units within 4” of the each other.
+Each attack must be against a different target, each is resolved separately(including Reactions), and all targets are declared before any attacks are resolved. Each attack suffers an additional penalty equal to the weapon’s Snapshot value.If the firing unit is wounded due to Reaction Fire any remaining attacks are resolved as normal before the unit is marked OOA.
+A weapon with the Select Fire ability may instead choose to perform a normal Ranged Attack against a single target at no additional penalty.</description>
+    </rule>
+    <rule name="Blunt Round" id="18c4-88af-cab2-c0f3" hidden="false">
+      <description>Coftyran Sharpshooter have made it common practice to carry specially modified ammunition for targeting tractors. In order to use them the sharpshooter must first perform a Prepare Weapon Task to load these anti-tractor rounds. These Blunt Rounds grant them a 1d6+2 Might roll against tractors, but do not confer any special bonuses against rhyflers.</description>
+    </rule>
+    <rule name="Dead-Eye" id="d190-c1b5-6dbb-6129" hidden="false">
+      <description>Rhyflers with this ability may perform Aimed Shot without Taking Aim first.</description>
+    </rule>
+    <rule name="Élan" id="4303-0082-2b47-ee41" hidden="false">
+      <description>Rhyflers within command range of this unit gain the Veteran ability.</description>
+    </rule>
+    <rule name="Grenadier" id="7cd8-a0d8-921a-ac0c" hidden="false">
+      <description>The rhyfler does not need to first Prime Explosive before performing the Throw Grenade Task, they may simply proceed to the attack.</description>
+    </rule>
+    <rule name="Multi-Attack(X)" id="3376-6936-c8a7-41ea" hidden="false">
+      <description>A unit with Multi-Attack(X) may make X attacks per Ranged Combat Task. Each attack must be against different targets, each is resolved separately(including Reactions), and all targets are declared before any attacks are resolved. Each attack is resolved with an additional -X to Skill.
+If the firing unit is wounded due to Reaction Fire any remaining attacks are
+resolved as normal before the unit is marked OOA.</description>
+    </rule>
+    <rule name="Onslaught" id="da0c-2d8e-0b88-8fc3" hidden="false">
+      <description>When performing the Fire and Advance Task, Leaders with this ability may ignore the X restriction on the number of rhyflers gathered for the Task, but they must still be within Y inches. Additionally those assigned to moving may elect to spend a point of Pluck per rhyfler to perform the Charge Task.</description>
+    </rule>
+    <rule name="Pack (X)" id="97d2-4b72-b416-fc58" hidden="false">
+      <description>Some creatures move and attack in groups, which can be both terrifying and hard to stop. For one Activation a number of these creatures equal to X may each individually perform a Task, moving or attacking independently. The Tasks do not need to be the same, and are independently resolved. Each individual creature is still limited to two Tasks per Round.</description>
+    </rule>
+    <rule name="PykPyk (X)" id="13c8-54a0-441f-a71c" hidden="false">
+      <description>Pykpyk Squirrels are treated as tokens and placed on the side of the play area. They need not be placed on the board with their handler, do not need to be activated and may not be attacked. (X) is the number of Pykpyks included with the Handler. Pykpyks are not removed if their Handler’s status changes to Out of Action.
+At any point during a commander’s round a Pykpyk may be exchanged to reveal the current Activation card, reroll all the dice on a Skill Check, or to perform a Tend Wounded Task on an Out of Action Rhyfler. This does not count as an Activation or the performance of a Task.</description>
+    </rule>
+    <rule name="Steady Under FIre" id="7503-1c04-fa1b-2567" hidden="false">
+      <description>Endlessly trained in fire discipline, these rhyflers understand the importance of concentrating fire. This ability allows the rhyfler to perform Supporting Fire without the Pluck cost. They may only Support and be Supported by rhyflers with Steady Under Fire.</description>
+    </rule>
+    <rule name="Support" id="c0d3-909a-ca80-1be2" hidden="false">
+      <description>Rhyflers with this ability may perform Supporting Fire when they meet the requirements of the Task. They may only Support and be Supported by rhyflers with this ability.</description>
+    </rule>
+    <rule name="Automatic" id="321d-91fa-c981-2ce1" hidden="false">
+      <description>Automatic weapons may perform the Area Fire action.</description>
+    </rule>
+    <rule name="Cavalry" id="c1de-9d84-74ac-817a" hidden="false">
+      <description>A rhyfler with this ability may perform a combat action as part of a normal move. The attack may be performed at any point during the rhyfler’s movement. Ranged attacks performed with this ability
+are at an additional -2 to the Skill Check, but Melee attacks grant the attacker the Wallop ability.</description>
+    </rule>
+    <rule name="Communications" id="3922-1607-2a89-5acb" hidden="false">
+      <description>This rhyfler ’s equipment brings him a constant stream of information about the battle, allowing him to keep his commander updated. After his opponent draws his activation card, his commander may spend a point of Pluck to reveal its value.</description>
+    </rule>
+    <rule name="Hardened" id="e0a0-779f-2ccc-df59" hidden="false">
+      <description>Some rhyflers are used to the chaos of the battlefield, shrugging off effects that would paralyze those with less training. A Hardened rhyfler may automatically ignore the need to go Prone when hit by ranged fire.
+A hardened rhyfler is not Gobsmacked when he dives for cover.</description>
+    </rule>
+    <rule name="Hero" id="6b4e-04ef-7e58-df7b" hidden="false">
+      <description>Veterans of many battles, Heroes are difficult to put at a disadvantage. Heroes have the Hardened and Veteran abilities.
+A commander’s Patrol may only include one Hero for every 100 points gathered, with a maximum of four allowed.</description>
+    </rule>
+    <rule name="Infiltrate" id="84eb-5fff-bb46-d164" hidden="false">
+      <description>A rhyfler with this ability may start the Skirmish off the battlefield. When his commander chooses to bring this rhyfler on the field he designates a point anywhere on the battlefield, no closer than 4” to an enemy rhyfler. He then spends a Action, and rolls on the Infiltrate table.</description>
+    </rule>
+    <rule name="Killing Strike" id="a41d-493b-7187-6930" hidden="false">
+      <description>This rhyfler is extraordinarily skilled with his melee weapon and may aim for a weak spot on his opponent. A rhyfler with this ability may reduce his effective Skill for an attack by two, allowing him to increase his Might by two.</description>
+    </rule>
+    <rule name="Leader (X/Y)" id="ba90-37ff-4384-2bc5" hidden="false">
+      <description>Leaders allow a commander to better control his troops through their abilities to activate multiple rhyflers at once. A rhyfler with this ability may perform a Leadership action with a number of rhyflers equal to his Leadership value (X) and within his Leadership range (Y), in inches.</description>
+    </rule>
+    <rule name="Leap" id="eb1b-31f9-ac3f-f568" hidden="false">
+      <description>When jumping during a movement action, this rhyfler multiplies the distance allowed, both horizontally and vertically, by their Leap value. This allows the rhyfler to ignore certain barricades and obstacles, as well as enemy rhyflers.</description>
+    </rule>
+    <rule name="Loader" id="877f-75ce-5dc9-010e" hidden="false">
+      <description>This weapon works more efficiently with assistance from an additional rhyfler. If the firing rhyfler is in base contact with another friendly rhyfler, increase the roll needed to pass any Skill Check by +1</description>
+    </rule>
+    <rule name="Parry" id="b33e-f884-915e-6263" hidden="false">
+      <description>Armed with advanced training in hand-to-hand combat, this rhyfler, when Gobsmacked by a melee attack, may attempt a Skill check to avoid the change in Status.</description>
+    </rule>
+    <rule name="Pathfinder" id="e600-3b55-a106-d6d2" hidden="false">
+      <description>This rhyfler is extremely adept at surprising his opponents. The rhyfler has the Infiltrate ability, and when rolling on the Infiltrate table, this he rolls three dice and chooses which two to apply.</description>
+    </rule>
+    <rule name="Ranged (X)" id="54f4-6c58-08c6-8d46" hidden="false">
+      <description>Rhyflers receive extensive training in the weapons they are issued, allowing them to add this value to the target number when performing a Ranged Attack.</description>
+    </rule>
+    <rule name="Melee (X)" id="ba7b-d442-85f1-d45d" hidden="false">
+      <description>Rhyflers receive extensive training in the weapons they are issued, allowing them to add this value to the target number when performing a melee attack.</description>
+    </rule>
+    <rule name="Resilient" id="e177-01dd-6ddd-72c1" hidden="false">
+      <description>Tougher than his companions, a Resilient rhyfler can do a Tend Wounded action on himself.</description>
+    </rule>
+    <rule name="Shotgun" id="d633-ee5f-c6cf-c931" hidden="false">
+      <description>Originally hunting weapons, Shotguns have found favor in the trenches. These weapons fire a group of small projectiles that cover an area, but lose effectiveness over range. 
+Within the first range band the shotgun affects only the target, but with +1 to Skill. 
+In the second range band it affects the target and an additional rhyfler of the firer’s choice within 1” of the primary target. 
+In the third range band it affects the target and an additional two rhyflers of the firer’s choice within 2” of the primary target. 
+Shotguns may not fire beyond three range bands.</description>
+    </rule>
+    <rule name="Skirmisher" id="8095-39f1-1cd6-a7d5" hidden="false">
+      <description>At home in the wilderness, these rhyflers are trained to make better use of terrain. Skirmishers do not suffer movement penalties from difficult terrain, and increase modifiers from cover by 1—clear terrain grants a -1, light cover increases to -2, etc—to a maximum penalty of -3.</description>
+    </rule>
+    <rule name="Slow Reload" id="d313-5d37-5ae4-7b1f" hidden="false">
+      <description>These complex weapons require the spending of an action to reload after a ranged attack. If the commander elects not to immediately reload the weapon the rhyfler must be marked as carrying an unloaded weapon.</description>
+    </rule>
+    <rule name="Sniper Scope" id="1486-b1a8-3288-f3d9" hidden="false">
+      <description>Equipped with telescopic sights, these weapons only apply range penalties up close. A weapon with a Sniper Scope suffers a -2 penalty within its first range band, and a -1 within its second. The third range
+band for the weapon is at no penalty, and further penalties are then calculated from that point, thus the fourth range band is at a -1.</description>
+    </rule>
+    <rule name="Veteran" id="806d-94e7-385d-5a56" hidden="false">
+      <description>Trained to shrug off battlefield conditions that leave other rhyflers subdued, a successful recovery does not count as one of a Veteran rhyfler’s two allowed actions.</description>
+    </rule>
+    <rule name="Wallop" id="a096-7d4a-47fc-3387" hidden="false">
+      <description>A rhyfler with this ability has trained in the art of melee weapons, or he is naturally very strong, allowing him to attack with great might. A rhyfler with the Wallop ability may perform a powerful blow attack by spending a point of Pluck instead of the second action normally required.</description>
+    </rule>
   </sharedRules>
 </gameSystem>
