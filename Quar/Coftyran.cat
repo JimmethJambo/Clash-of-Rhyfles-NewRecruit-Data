@@ -35,4 +35,7 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="is-Caerten" hidden="false" id="716d-4ad6-78c9-f166" type="selectionEntry" targetId="528f-29fc-4aca-9939"/>
+  </entryLinks>
 </catalogue>
