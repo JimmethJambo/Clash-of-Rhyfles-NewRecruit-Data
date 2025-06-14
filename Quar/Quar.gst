@@ -34,6 +34,7 @@
       <characteristicTypes>
         <characteristicType name="Range" id="5b6c-828e-fe65-26a5"/>
         <characteristicType name="SN" id="b1d6-1660-ac56-c22a"/>
+        <characteristicType name="Abilities" id="ed37-dbdc-d41b-3af6"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>

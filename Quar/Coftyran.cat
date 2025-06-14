@@ -24,6 +24,108 @@
       </profiles>
       <infoLinks>
         <infoLink name="Pistol" id="1ac1-5234-235c-01ea" hidden="false" type="profile" targetId="99bd-7fcc-169d-3745"/>
+        <infoLink name="Leader (X/Y)" id="5cf3-1cbf-6534-fa8d" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+        <infoLink name="Melee (X)" id="9f40-7b31-f0a3-d19b" hidden="false" type="rule" targetId="ba7b-d442-85f1-d45d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rhyfler (Harlech)" hidden="false" id="8b34-8e80-a2e8-1aeb" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="8f2d-e3a7-fe74-f5af" primary="false" name="Unit"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="4748-ab0c-e435-9600">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Supporaty</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Harlech" id="390b-ab60-7e5f-0ee6" hidden="false" type="profile" targetId="797a-eb54-4f71-b05c"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rhyfler (Cryfen)" hidden="false" id="f446-3d42-59a3-d09c" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="2775-de3c-5a88-a9b5" primary="false" name="Unit"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Rhyfler (Cryfen)" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="9e4a-f0ee-d661-6ad3">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d408-8179-220d-c602" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="32"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Cryfen" id="ce15-112a-c5b4-3d74" hidden="false" type="profile" targetId="f278-e682-48d4-dfb5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Milwer" hidden="false" id="99ae-5ec3-34f9-3422" defaultAmount="1">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="abd2-69ed-53f7-6a34" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="27"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="0730-d1fd-7c19-ffc9" primary="false" name="Unit"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Milwer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="da9e-eff2-5053-2fea">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (2/3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="4c0f-36b0-d0e4-bb4d" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+        <infoLink name="Harlech" id="309f-7ff4-0156-a363" hidden="false" type="profile" targetId="797a-eb54-4f71-b05c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Yawdryl" hidden="false" id="e60b-61ed-a530-e69d">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="33"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="5f0e-0c85-4d73-3c28" primary="false" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="adae-89fc-14c5-080d" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="d416-d779-51d7-3ed8">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="ae2e-8a45-0419-6d2e" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+        <infoLink name="Doru" id="f8ed-2420-00ba-3bb5" hidden="false" type="profile" targetId="0ffb-7275-6b02-c0c9"/>
+        <infoLink name="Select Fire(X)" id="abf5-2c3b-1a96-393f" hidden="false" type="rule" targetId="8c44-111c-27c4-4a9b"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -32,10 +134,46 @@
       <characteristics>
         <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
         <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+        <characteristic typeId="ed37-dbdc-d41b-3af6" name="Abilities"/>
+      </characteristics>
+    </profile>
+    <profile name="Harlech" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="797a-eb54-4f71-b05c">
+      <characteristics>
+        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+        <characteristic typeId="ed37-dbdc-d41b-3af6" name="Abilities"/>
+      </characteristics>
+    </profile>
+    <profile name="Cryfen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="f278-e682-48d4-dfb5">
+      <characteristics>
+        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">8</characteristic>
+        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-3</characteristic>
+        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Automatic, Loader</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Doru" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="0ffb-7275-6b02-c0c9">
+      <characteristics>
+        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">4</characteristic>
+        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">-1</characteristic>
+        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Select Fire 2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="RCO m60" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="0682-e7e1-c334-bbe8">
+      <characteristics>
+        <characteristic name="Range" typeId="5b6c-828e-fe65-26a5">12</characteristic>
+        <characteristic name="SN" typeId="b1d6-1660-ac56-c22a">n/a</characteristic>
+        <characteristic name="Abilities" typeId="ed37-dbdc-d41b-3af6">Blast (2,2d6), Slow Reload, Crew (2), Gun Shield, Heavy (2,4)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
   <entryLinks>
-    <entryLink import="true" name="is-Caerten" hidden="false" id="716d-4ad6-78c9-f166" type="selectionEntry" targetId="528f-29fc-4aca-9939"/>
+    <entryLink import="true" name="is-Caerten" hidden="false" id="716d-4ad6-78c9-f166" type="selectionEntry" targetId="528f-29fc-4aca-9939">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="bf35-a839-b1e2-88e5" primary="false" name="Unit"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rhyfler (Harlech)" hidden="false" id="18a7-7052-ab93-1878" type="selectionEntry" targetId="8b34-8e80-a2e8-1aeb"/>
+    <entryLink import="true" name="Rhyfler (Cryfen)" hidden="false" id="e851-cbe6-dca8-8b49" type="selectionEntry" targetId="f446-3d42-59a3-d09c"/>
+    <entryLink import="true" name="Milwer" hidden="false" id="1059-5f09-2a7a-88e7" type="selectionEntry" targetId="99ae-5ec3-34f9-3422"/>
   </entryLinks>
 </catalogue>
