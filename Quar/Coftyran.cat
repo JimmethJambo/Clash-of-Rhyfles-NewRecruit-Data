@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="New Entry" hidden="false" id="528f-29fc-4aca-9939" defaultAmount="1">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4c29-4ea4-07da-72c4" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="2a38-dcf2-13d6-b6ad" primary="false" name="Unit"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Is-Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="bc88-2f2f-61d7-810e"/>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
