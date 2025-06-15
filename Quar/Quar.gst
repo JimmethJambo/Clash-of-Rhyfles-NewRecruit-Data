@@ -10,13 +10,6 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
-  <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Default Root Entry" hidden="false" id="default-entry">
-      <categoryLinks>
-        <categoryLink targetId="de6b-6ec2-9294-541d" id="fac8-0520-d385-bfa9" primary="false" name="Unit"/>
-      </categoryLinks>
-    </selectionEntry>
-  </selectionEntries>
   <costTypes>
     <costType name="Points" id="0bc1-1233-3e53-72ca" defaultCostLimit="300"/>
   </costTypes>
@@ -216,6 +209,26 @@ band for the weapon is at no penalty, and further penalties are then calculated
     </rule>
     <rule name="Wallop" id="a096-7d4a-47fc-3387" hidden="false">
       <description>A rhyfler with this ability has trained in the art of melee weapons, or he is naturally very strong, allowing him to attack with great might. A rhyfler with the Wallop ability may perform a powerful blow attack by spending a point of Pluck instead of the second action normally required.</description>
+    </rule>
+    <rule name="Blast (X,Y)" id="b4b8-45d7-e9bb-1444" hidden="false">
+      <description>Establish the Blast Point
+Weapons with the Blast ability affect an area instead of a single target and follow a different attack sequence. The firing unit declares a target unit within Line of Sight. The attacking unit then makes a Blast Attack Skill Check to hit the target. The only modifiers to this roll are for Range Bands and Cover, targeted rhyflers may not react to this attack with Reaction Fire or by Skedaddling. The result of the attack will indicate where to place the Blast Point.
+Determine Damage Against Rhyflers
+Taking Cover (Infantry Only)
+Rhyflers within X of the Blast Point then make a Skill Check to Take Cover. Each rhyfler makes an individual Skill Check at a penalty depending on the Blast value of the weapon; Blast (2) gives a -2 to the  check.
+With a successful check halve the final Might value of the attack against them. If the check is failed the rhyflers are affected by the full Might value of the attack. If there is Cover between the Blast Point and a rhyfler Taking Cover, a successful Skill Check avoids the effects of the attack entirely.
+
+
+Might Roll
+Once the Blast Point is determined perform a separate Might roll against each affected rhyfler to determine the attack’s Might Value. If the rhyfler’s Take Cover roll was successful this value is halved. If the check was failed the full value is applied regardless of cover or status.
+
+
+Determine Damage Against Tractors
+When the target of a Blast attack follow the standard rules for attacking tractors. If the Blast Point is not centered on the tractor, but it is still partially under it, either due to a missed attack that dispersed or proximity to a targeted unit, halve the final Might value of the explosion.
+
+
+Splash Damage
+If there are rhyflers near a targeted tractor they may be struck by shrapnyl ricocheting from the point of impact. When a tractor is hit by a Blast weapon the Blast Point is determined by drawing a straight  line from the firing weapon ending at a point on the location hit. After it is placed any rhyflers within X also suffer from the effects of the attack, as detailed above.</description>
     </rule>
   </sharedRules>
 </gameSystem>
