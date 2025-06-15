@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Bogen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d73e-9bd0-b2e0-2432">
       <characteristics>
@@ -103,7 +103,7 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="25"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Bogen" hidden="false" id="267f-9e5d-f5a4-bcc0" type="selectionEntry" page="" targetId="caf9-e75a-bf81-1229">
+        <entryLink import="true" name="Bogen" hidden="false" id="267f-9e5d-f5a4-bcc0" type="selectionEntry" targetId="caf9-e75a-bf81-1229">
           <profiles>
             <profile name="Bogen" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="c6af-ee9a-ed43-ffd8">
               <characteristics>
@@ -224,6 +224,581 @@
         <entryLink import="true" name="Bogen" hidden="false" id="890b-18a5-dbfb-6de9" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="is-Caerten (Grifkis)" hidden="false" id="a46b-cfdb-2a09-09ed" sortIndex="2">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="9a24-c263-c787-604e" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c88d-3d2b-b533-38e5" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Grifkis Shotgun" hidden="false" id="cfe2-65d6-939b-65fc" type="selectionEntry" targetId="21d5-c239-f062-4b2a"/>
+      </entryLinks>
+      <profiles>
+        <profile name="is-caerten (Grifkis)" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="2aa2-95b2-c24e-f272">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/6)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="bae3-9efa-5eec-94ba" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9127-bd4d-845f-b4fd" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="is-Caerten (Bogen)" hidden="false" id="9127-bd4d-845f-b4fd" sortIndex="2">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="f173-b95b-c920-f60b" primary="true" name="Unit"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b9ac-8bd9-a64c-9a8f" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bogen" hidden="false" id="a302-8159-567c-b8f7" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
+      </entryLinks>
+      <profiles>
+        <profile name="is-caerten (Bogen)" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="b153-ba55-fd01-febb">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (3/6), Ranged (+1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="a46b-cfdb-2a09-09ed" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Caerten (Grifkis)" hidden="false" id="006c-8722-d1c6-c986" sortIndex="2">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="008c-e4a4-268e-72da" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5edf-e874-fa11-0253" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Grifkis Shotgun" hidden="false" id="1f59-1356-2503-3c12" type="selectionEntry" targetId="21d5-c239-f062-4b2a"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Caerten (Grifkis)" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="7872-1b08-72e1-59c1">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6-1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (2/4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="5edc-1c7c-08bc-3169" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Caerten (Bogen)" hidden="false" id="166c-a39b-2322-4aec" sortIndex="2">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="5cbd-0791-2a2f-1057" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecac-9fa3-733f-937a" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="333a-d046-37e9-6d99" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+        <infoLink name="Ranged (X)" id="8256-928f-a0e4-9dfe" hidden="false" type="rule" targetId="54f4-6c58-08c6-8d46"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Caerten (Bogen)" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="554a-6fb1-f0b2-0012">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (2/4), Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Bogen" hidden="false" id="cc3b-5c14-f110-2865" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Master Yawdryl" hidden="false" id="904b-3278-1d82-aff3" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="6082-e6e0-0cb0-16d6" primary="true" name="Unit"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Bogen" hidden="false" id="36ac-4716-1673-1af5" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Leader (X/Y)" id="71ed-7f45-d4dd-aa33" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Master Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="25f2-d7c3-6034-bfc5">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Leader (5/4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="686c-e894-bd41-beec" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Caerten" hidden="false" id="686c-e894-bd41-beec" sortIndex="0">
+      <entryLinks>
+        <entryLink import="true" name="Caerten (Bogen)" hidden="false" id="2902-d20e-d004-eee7" type="selectionEntry" targetId="166c-a39b-2322-4aec">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="a46b-cfdb-2a09-09ed" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Caerten (Grifkis)" hidden="false" id="4240-9e0b-1cde-d99a" type="selectionEntry" targetId="006c-8722-d1c6-c986">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="166c-a39b-2322-4aec" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="33"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e4c4-b15e-1e65-ea67" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="28e8-5ef8-f4b8-f03f" primary="true" name="Unit"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="New Entry" hidden="false" id="de89-5fe9-2fca-0d29" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="87b7-8861-000f-7af0" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="is-caerten (Bogen)" hidden="false" id="78d2-5018-c631-4f8a" type="selectionEntry" targetId="9127-bd4d-845f-b4fd"/>
+        <entryLink import="true" name="is-caerten (Grifkis)" hidden="false" id="cbcd-c40c-1239-b030" type="selectionEntry" targetId="a46b-cfdb-2a09-09ed"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="is-Caerten" hidden="false" id="31e8-b313-a5c9-fe4a" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="bbc4-6285-e053-bcba" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bd9a-089b-c85b-8e45" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="is-caerten (Bogen)" hidden="false" id="1041-32d7-f100-8bc2" type="selectionEntry" targetId="9127-bd4d-845f-b4fd"/>
+        <entryLink import="true" name="is-caerten (Grifkis)" hidden="false" id="495d-1cc9-8f68-698b" type="selectionEntry" targetId="a46b-cfdb-2a09-09ed"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cook" hidden="false" id="73f3-6405-d012-f199" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2ed6-b444-9965-6f30" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bogen" hidden="false" id="3a91-fd3e-e9df-fd85" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Medic" id="51e0-fc08-a9f4-3480" hidden="false" type="rule" targetId="0de6-c532-1b9e-df58"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Cook" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="d3b9-e63d-6b5f-48c3">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Medic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Musician" hidden="false" id="4f9a-8ce1-451e-e8cf" sortIndex="0">
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="d2d3-214c-8767-21e8" primary="true" name="Unit"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="add0-3b9a-3eee-b5c9" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bogen" hidden="false" id="d3e7-9d1d-683a-4178" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Musician" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="c8b3-5cfe-b38f-b819">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Musician (4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Standard Bearer" hidden="false" id="20e3-2b59-1fcb-e6a8" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="f43b-8e47-4046-b662" primary="true" name="Unit"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Bogen" hidden="false" id="4db8-e42f-2362-5398" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Standard" id="d5a0-e55a-8dcb-7fb4" hidden="false" type="rule" targetId="2437-22be-ccb6-5ef4"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Standard Bearer" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="db83-91c3-e787-3051">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Standard</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7225-266b-5eb5-0d16" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Squirrel Handler" hidden="false" id="452d-8b67-afb0-22de" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="577b-9d15-df01-605c" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="2ac4-16e0-1c2e-ba51" primary="true" name="Unit"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Bogen" hidden="false" id="3397-db86-2c6d-be28" type="selectionEntry" page="" targetId="caf9-e75a-bf81-1229"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="PykPyk (X)" id="c5c4-19b2-f45f-ef0e" hidden="false" type="rule" targetId="13c8-54a0-441f-a71c"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Squirrel Handler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="6bb9-7bc2-a81e-cfaa">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">PykPyk(3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="LMG Rhyfler" hidden="false" id="fe54-8a8c-87db-ffec" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="42af-978f-8715-d4a8" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="aa3f-7614-8afb-a76f" primary="true" name="Unit"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="h-11a" hidden="false" id="0c10-0526-d6f6-7c30" type="selectionEntry" targetId="6f82-859f-0d32-8ebc"/>
+      </entryLinks>
+      <profiles>
+        <profile name="LMG Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="e918-9223-90ef-e1b2">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Torpedo Rhyfler" hidden="false" id="28f0-2c0b-8528-0650" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="39"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="cf1e-7783-b462-c454" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Splagen Torpedo" hidden="false" id="dbe8-daa0-26cc-88c6" type="selectionEntry" targetId="3ece-b16c-eec5-a880"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Torpedo Rhyfler" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="1884-0255-15e4-eea6">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Weapon Team Loader" hidden="false" id="a91b-0f41-45dd-11b3" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="28"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="4356-22f6-8784-2cea" primary="true" name="Unit"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Bogen" hidden="false" id="e9e2-2b54-eac2-c6a0" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Weapon Team Loader" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="7397-68b2-0b54-9d99">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Trench Raider" hidden="false" id="58a0-6a93-88c7-3348" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="43"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="77ef-86a7-d412-a986" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="66e1-3764-9f87-dfa7" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Sio-Cly Derringer" hidden="false" id="eac4-5152-3c56-86f1" type="selectionEntry" targetId="36ab-4e9b-23aa-bb0d"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Trench Raider" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="6b1e-ee29-549c-8617">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6+1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">6</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Wallop, Infiltrate</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Wallop" id="e754-803e-2b05-e193" hidden="false" type="rule" targetId="a096-7d4a-47fc-3387"/>
+        <infoLink name="Infiltrate" id="1eec-d3c0-7918-319c" hidden="false" type="rule" targetId="84eb-5fff-bb46-d164"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Trench Raider Yawdryl" hidden="false" id="e8bf-67f4-d423-8d0e" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="504b-1138-01f8-6d16" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e41c-09eb-afa1-9bcf" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="2" field="selections" scope="roster" childId="58a0-6a93-88c7-3348" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Sio-Cly Derringer" hidden="false" id="0310-99f8-8087-60c2" type="selectionEntry" targetId="36ab-4e9b-23aa-bb0d"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Trench Raider Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="ad26-fc12-94a8-51cb">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6+1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">6</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Infiltrate, Leader (3/4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Infiltrate" id="08f1-e9d2-ce87-a18f" hidden="false" type="rule" targetId="84eb-5fff-bb46-d164"/>
+        <infoLink name="Leader (X/Y)" id="bc0c-62dd-dcc5-ba35" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Pathfinder (Shotgun)" hidden="false" id="3fbb-da68-ef51-e220" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="57a0-bccf-d948-ed3c" primary="true" name="Unit"/>
+        <categoryLink targetId="8e16-bde7-3ecc-3a44" id="fa42-a807-931e-30a4" primary="false" name="Pathfinder"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Gorga MOD(2)" hidden="false" id="f941-ebf7-0237-a8dd" type="selectionEntry" targetId="0925-10af-850c-1e5c"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Pathfinder" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="97d9-c030-e2da-a7a1">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6+2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Skirmisher</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Skirmisher" id="c56e-e76f-b4c8-b63b" hidden="false" type="rule" targetId="8095-39f1-1cd6-a7d5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Pathfinder (Bogen)" hidden="false" id="40a9-7c5f-0b9a-6ad8" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="37"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="0a6d-f66c-7393-43bb" primary="true" name="Unit"/>
+        <categoryLink targetId="8e16-bde7-3ecc-3a44" id="bf30-8007-1af9-55b3" primary="false" name="Pathfinder"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Bogen" hidden="false" id="b6f3-2cec-76de-6f54" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Pathfinder" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="ee0a-b5e6-ee6b-8d6d">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Skirmisher</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Skirmisher" id="76d4-2b78-5fe3-1d11" hidden="false" type="rule" targetId="8095-39f1-1cd6-a7d5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Pathfinder Yawdryl" hidden="false" id="5ef9-a50f-9960-f49d" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="50"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="73bd-9d2e-c839-49de" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="2" field="selections" scope="roster" childId="8e16-bde7-3ecc-3a44" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Bogen" hidden="false" id="ff70-7e98-7903-5fdd" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Pathfinder Yawdryl" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="8b03-fea1-12f4-631d">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">13</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">2d6+1</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Skirmisher, Scout (3/4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="aca9-267e-ca93-7c25" primary="true" name="Unit"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Skirmisher" id="93e7-e8db-eac9-4a23" hidden="false" type="rule" targetId="8095-39f1-1cd6-a7d5"/>
+        <infoLink name="Scout (X/Y)" id="5f0b-0e65-825e-d8ee" hidden="false" type="rule" targetId="0d68-8b95-5793-02aa"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Pathfinder is-Caerten" hidden="false" id="68c0-8895-2f9b-8669" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="ce25-3d80-b9b7-74e7" primary="true" name="Unit"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ba2c-b74e-c2fa-88c3" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="2" field="selections" scope="roster" childId="8e16-bde7-3ecc-3a44" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Gorga MOD(2)" hidden="false" id="4ac5-770d-283a-b8a5" type="selectionEntry" targetId="0925-10af-850c-1e5c"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Scout (X/Y)" id="e2b9-30f2-b0a2-3186" hidden="false" type="rule" targetId="0d68-8b95-5793-02aa"/>
+        <infoLink name="Melee (X)" id="edda-92da-6d9d-40d4" hidden="false" type="rule" targetId="ba7b-d442-85f1-d45d"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Pathfinder is-Caerten" typeId="7040-9c4e-1119-a3c5" typeName="Unit" hidden="false" id="2057-a8d2-7431-7bc9">
+          <characteristics>
+            <characteristic name="Sk" typeId="0014-9871-f278-b5f3">12</characteristic>
+            <characteristic name="Mt" typeId="d8ef-e518-8f49-8a7b">1d6_2</characteristic>
+            <characteristic name="MA" typeId="4cd7-b825-6660-1758">5</characteristic>
+            <characteristic name="Toughness" typeId="197d-1c5e-af24-ee6e">4</characteristic>
+            <characteristic name="Special Abilities" typeId="94ec-89a2-8f77-66c3">Melee (+1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Rhyfler (Bogen)" hidden="false" id="3655-aaf6-a5b0-7814" type="selectionEntry" targetId="ba33-bdfb-fce5-f396"/>
@@ -232,4 +807,7 @@
     <entryLink import="true" name="Squad Marksquar" hidden="false" id="3e13-c5fa-6211-fc49" type="selectionEntry" targetId="2997-5fb1-6ae7-94c8"/>
     <entryLink import="true" name="Yawdryl" hidden="false" id="35be-9d0b-d823-55ef" type="selectionEntry" targetId="f4c9-2ba9-f864-43f1"/>
   </entryLinks>
+  <categoryEntries>
+    <categoryEntry name="Pathfinder" id="8e16-bde7-3ecc-3a44" hidden="false"/>
+  </categoryEntries>
 </catalogue>
