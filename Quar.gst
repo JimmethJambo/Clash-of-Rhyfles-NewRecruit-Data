@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
+<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
   <categoryEntries>
     <categoryEntry name="Unit" id="de6b-6ec2-9294-541d" hidden="false"/>
   </categoryEntries>
@@ -28,6 +28,34 @@
         <characteristicType name="Range" id="5b6c-828e-fe65-26a5"/>
         <characteristicType name="SN" id="b1d6-1660-ac56-c22a"/>
         <characteristicType name="Abilities" id="ed37-dbdc-d41b-3af6"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Squad Tractor" id="c0d6-dd04-e4e2-90bb" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Crew" id="dd29-0845-6869-58e6"/>
+        <characteristicType name="Skill" id="7171-15a3-3392-26c7"/>
+        <characteristicType name="MA" id="8112-28ba-c9a3-5714"/>
+        <characteristicType name="Abilities" id="46a0-fd12-ff7d-1a6f"/>
+        <characteristicType name="Tread Damage Points" id="b554-5ae2-03ab-4105"/>
+        <characteristicType name="Hull Damage Points" id="0269-a706-2bea-6c85"/>
+        <characteristicType name="Engine Damage Points" id="df7d-5deb-8b55-3b06"/>
+        <characteristicType name="Tread Armor Value" id="d79c-c916-a478-ba1e"/>
+        <characteristicType name="Hull Armor Value" id="3341-ef0e-6ede-ca25"/>
+        <characteristicType name="Tread Armor Value" id="81b5-bb41-0b10-9d9f"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Squad Tractor Damage Area" id="bf17-75fe-032b-a8eb" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Tread" id="6193-4d0a-5399-c05d"/>
+        <characteristicType name="Hull" id="2882-bfcc-2f15-a801"/>
+        <characteristicType name="Engine" id="609f-652d-ea95-f699"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Tractor Weapon" id="b654-1c6a-7803-6882" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Range" id="206b-98a7-3ceb-bc0e"/>
+        <characteristicType name="Arc" id="7f52-7175-881e-a429"/>
+        <characteristicType name="Abilities" id="0095-18c0-009f-e488"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -229,6 +257,15 @@ When the target of a Blast attack follow the standard rules for attacking tract
 
 Splash Damage
 If there are rhyflers near a targeted tractor they may be struck by shrapnyl ricocheting from the point of impact. When a tractor is hit by a Blast weapon the Blast Point is determined by drawing a straight  line from the firing weapon ending at a point on the location hit. After it is placed any rhyflers within X also suffer from the effects of the attack, as detailed above.</description>
+    </rule>
+    <rule name="Turret" id="15ec-d221-5e3c-04d7" hidden="false">
+      <description> The tractor has a turret which allows the Hull, or its weapon platform, to rotate towards a target. This requires the Gunner to perform the Turn Turret Task.</description>
+    </rule>
+    <rule name="Squad Tractor" id="793f-4b88-e564-ce73" hidden="false">
+      <description>Some factions deploy lighter, single quar tractors to accompany and support their rhyflers. Often attached to the unit, these Squad Tractors Activate in the same manner as the standard rhyfler. However not all Tasks available to rhyflers may be performed by Squad Tractors; only the listed Tasks are available.
+Movement Tasks - Move, Disengage, Turn Turret
+Combat Tasks - Fire Main Gun, Overwatch
+Recovery Tasks - Steady, Recover</description>
     </rule>
   </sharedRules>
 </gameSystem>
