@@ -154,6 +154,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="b380-b84c-8c67-8333" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Crown Milwer" hidden="false" id="6b69-ec9c-186b-bc9a" sortIndex="0">
       <categoryLinks>
@@ -229,6 +232,9 @@
       <infoLinks>
         <infoLink name="Standard" id="579a-c226-819b-2a65" hidden="false" type="rule" targetId="2437-22be-ccb6-5ef4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="d2ff-e2ce-1e25-be70" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Squirrel Messenger" hidden="false" id="e232-351f-9adf-c7d5" sortIndex="0">
       <costs>
@@ -254,6 +260,9 @@
       <infoLinks>
         <infoLink name="PykPyk (X)" id="e1ae-7587-44d2-92a5" hidden="false" type="rule" targetId="13c8-54a0-441f-a71c"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="6519-1cc0-fe1c-e8a5" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Miner" hidden="false" id="7551-7078-1913-971a" sortIndex="0">
       <costs>
@@ -280,6 +289,9 @@
         <infoLink name="Infiltrate" id="3e63-66ae-16cc-f9dc" hidden="false" type="rule" targetId="84eb-5fff-bb46-d164"/>
         <infoLink name="Hardened" id="bd5d-2d1f-fedf-8b7b" hidden="false" type="rule" targetId="e0a0-779f-2ccc-df59"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="162c-1670-481f-bdca" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lancer" hidden="false" id="0415-06e9-a2b3-764d" sortIndex="0">
       <costs>
@@ -302,6 +314,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="12ff-58a9-74f4-a3fe" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fydo" hidden="false" id="9f52-bfa3-d6bf-e906" sortIndex="0">
       <costs>
@@ -325,6 +340,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="4318-b892-9c27-703f" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="is-Caerten" hidden="false" id="3b58-8332-8a67-142a" sortIndex="0">
       <costs>
@@ -406,7 +424,7 @@
         <entryLink import="true" name="M8-c MMG" hidden="false" id="11c9-73f8-50c5-522d" type="selectionEntry" targetId="e657-c0f6-7f44-b9ee"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="M8-c MMG" hidden="false" id="e657-c0f6-7f44-b9ee" sortIndex="2">
+    <selectionEntry type="upgrade" import="true" name="M8-c MMG" hidden="false" id="e657-c0f6-7f44-b9ee" sortIndex="2" defaultAmount="1">
       <profiles>
         <profile name="M8-c MMG" typeId="b654-1c6a-7803-6882" typeName="Tractor Weapon" hidden="false" id="965a-cfef-076e-f2d4">
           <characteristics>
