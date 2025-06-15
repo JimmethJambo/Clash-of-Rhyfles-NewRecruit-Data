@@ -267,5 +267,14 @@ Movement Tasks - Move, Disengage, Turn Turret
 Combat Tasks - Fire Main Gun, Overwatch
 Recovery Tasks - Steady, Recover</description>
     </rule>
+    <rule name="The Gloam has Eyes" id="02e8-c22a-09fe-2b41" hidden="false">
+      <description>Gloam Hyyn Yawdryls are known for their ability to guide their squads through the roughest terrain. Rhyflers within command range of this unit gain the Skirmisher ability.</description>
+    </rule>
+    <rule name="Taste for Squirrel" id="11b0-859a-a7d1-a8ea" hidden="false">
+      <description>While certainly not a picky eater, the Sarf-cyn is known to go out of its way for its favorite snack. When a commander uses a Pykpyk, roll 1d6 for each unit with this ability on the field. On a 5-6, the PykPyk is eaten while trying to complete its task and is spent for no effect.</description>
+    </rule>
+    <rule name="Turretless" id="a3fc-1bc1-8cfe-1886" hidden="false">
+      <description>The vehicle has no turret. Once during the Round the Gunner may pass his Activation to have the Driver immediately perform a Turn Vehicle Task.</description>
+    </rule>
   </sharedRules>
 </gameSystem>
