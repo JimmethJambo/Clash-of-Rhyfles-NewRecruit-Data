@@ -408,7 +408,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="28e8-5ef8-f4b8-f03f" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="New Entry" hidden="false" id="de89-5fe9-2fca-0d29" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="is-Caerten" hidden="false" id="de89-5fe9-2fca-0d29" sortIndex="0">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
       </costs>
@@ -418,21 +418,6 @@
       <entryLinks>
         <entryLink import="true" name="is-caerten (Bogen)" hidden="false" id="78d2-5018-c631-4f8a" type="selectionEntry" targetId="9127-bd4d-845f-b4fd"/>
         <entryLink import="true" name="is-caerten (Grifkis)" hidden="false" id="cbcd-c40c-1239-b030" type="selectionEntry" targetId="a46b-cfdb-2a09-09ed"/>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="is-Caerten" hidden="false" id="31e8-b313-a5c9-fe4a" sortIndex="0">
-      <costs>
-        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="36"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="de6b-6ec2-9294-541d" id="bbc4-6285-e053-bcba" primary="true" name="Unit"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bd9a-089b-c85b-8e45" includeChildSelections="true"/>
-      </constraints>
-      <entryLinks>
-        <entryLink import="true" name="is-caerten (Bogen)" hidden="false" id="1041-32d7-f100-8bc2" type="selectionEntry" targetId="9127-bd4d-845f-b4fd"/>
-        <entryLink import="true" name="is-caerten (Grifkis)" hidden="false" id="495d-1cc9-8f68-698b" type="selectionEntry" targetId="a46b-cfdb-2a09-09ed"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cook" hidden="false" id="73f3-6405-d012-f199" sortIndex="0">
@@ -806,6 +791,23 @@
     <entryLink import="true" name="Milwer" hidden="false" id="e63c-69c5-2a57-6b88" type="selectionEntry" targetId="f110-328c-09f0-9ea3"/>
     <entryLink import="true" name="Squad Marksquar" hidden="false" id="3e13-c5fa-6211-fc49" type="selectionEntry" targetId="2997-5fb1-6ae7-94c8"/>
     <entryLink import="true" name="Yawdryl" hidden="false" id="35be-9d0b-d823-55ef" type="selectionEntry" targetId="f4c9-2ba9-f864-43f1"/>
+    <entryLink import="true" name="Weapon Team Loader" hidden="false" id="d68d-2e35-97ec-32f9" type="selectionEntry" targetId="a91b-0f41-45dd-11b3"/>
+    <entryLink import="true" name="Trench Raider" hidden="false" id="62a0-2991-21ba-24b7" type="selectionEntry" targetId="58a0-6a93-88c7-3348"/>
+    <entryLink import="true" name="Trench Raider Yawdryl" hidden="false" id="9a0f-dcc6-23d4-0fd3" type="selectionEntry" targetId="e8bf-67f4-d423-8d0e"/>
+    <entryLink import="true" name="Torpedo Rhyfler" hidden="false" id="dd70-cc5e-ea87-8100" type="selectionEntry" targetId="28f0-2c0b-8528-0650"/>
+    <entryLink import="true" name="Standard Bearer" hidden="false" id="ef63-40b3-f6c4-94d2" type="selectionEntry" targetId="20e3-2b59-1fcb-e6a8"/>
+    <entryLink import="true" name="Squirrel Handler" hidden="false" id="89fc-7cbd-86e4-3608" type="selectionEntry" targetId="452d-8b67-afb0-22de"/>
+    <entryLink import="true" name="Squad Marksquar" hidden="false" id="fe0e-22f5-7579-bed3" type="selectionEntry" targetId="2997-5fb1-6ae7-94c8"/>
+    <entryLink import="true" name="Pathfinder (Bogen)" hidden="false" id="482d-6dd2-cab9-c26e" type="selectionEntry" targetId="40a9-7c5f-0b9a-6ad8"/>
+    <entryLink import="true" name="Pathfinder (Shotgun)" hidden="false" id="cd1e-04a6-67ee-d6ac" type="selectionEntry" targetId="3fbb-da68-ef51-e220"/>
+    <entryLink import="true" name="Pathfinder Yawdryl" hidden="false" id="decd-fc78-7f20-aebc" type="selectionEntry" targetId="5ef9-a50f-9960-f49d"/>
+    <entryLink import="true" name="Pathfinder is-Caerten" hidden="false" id="43f1-ce7d-696e-f22a" type="selectionEntry" targetId="68c0-8895-2f9b-8669"/>
+    <entryLink import="true" name="Musician" hidden="false" id="94ea-3a83-1ed6-ad80" type="selectionEntry" targetId="4f9a-8ce1-451e-e8cf"/>
+    <entryLink import="true" name="Caerten" hidden="false" id="b142-ea9a-bb5f-2b17" type="selectionEntry" targetId="686c-e894-bd41-beec"/>
+    <entryLink import="true" name="is-Caerten" hidden="false" id="35e0-008a-300a-53a6" type="selectionEntry" targetId="de89-5fe9-2fca-0d29"/>
+    <entryLink import="true" name="LMG Rhyfler" hidden="false" id="98f2-ea05-edd7-6d81" type="selectionEntry" targetId="fe54-8a8c-87db-ffec"/>
+    <entryLink import="true" name="Master Yawdryl" hidden="false" id="1188-0396-6c78-3ad8" type="selectionEntry" targetId="904b-3278-1d82-aff3"/>
+    <entryLink import="true" name="Cook" hidden="false" id="23ef-704b-42fe-9e90" type="selectionEntry" targetId="73f3-6405-d012-f199"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Pathfinder" id="8e16-bde7-3ecc-3a44" hidden="false"/>
