@@ -259,7 +259,7 @@ Splash Damage
 If there are rhyflers near a targeted tractor they may be struck by shrapnyl ricocheting from the point of impact. When a tractor is hit by a Blast weapon the Blast Point is determined by drawing a straight  line from the firing weapon ending at a point on the location hit. After it is placed any rhyflers within X also suffer from the effects of the attack, as detailed above.</description>
     </rule>
     <rule name="Turret" id="15ec-d221-5e3c-04d7" hidden="false">
-      <description> The tractor has a turret which allows the Hull, or its weapon platform, to rotate towards a target. This requires the Gunner to perform the Turn Turret Task.</description>
+      <description>The tractor has a turret which allows the Hull, or its weapon platform, to rotate towards a target. This requires the Gunner to perform the Turn Turret Task.</description>
     </rule>
     <rule name="Squad Tractor" id="793f-4b88-e564-ce73" hidden="false">
       <description>Some factions deploy lighter, single quar tractors to accompany and support their rhyflers. Often attached to the unit, these Squad Tractors Activate in the same manner as the standard rhyfler. However not all Tasks available to rhyflers may be performed by Squad Tractors; only the listed Tasks are available.
@@ -275,6 +275,12 @@ Recovery Tasks - Steady, Recover</description>
     </rule>
     <rule name="Turretless" id="a3fc-1bc1-8cfe-1886" hidden="false">
       <description>The vehicle has no turret. Once during the Round the Gunner may pass his Activation to have the Driver immediately perform a Turn Vehicle Task.</description>
+    </rule>
+    <rule name="Autocycle" id="ee16-c6bc-a5e7-b99d" hidden="false">
+      <description>These fast moving units bring unparalleled mobility to the battlefield. Rhyflers riding Autocycles may only perform Standard Move Actions while mounted, no Sprinting or Charging. Mounted rhyflers may not enter difficult terrain, nor may they Go Prone or Dive for Cover. If a Mounted rhyfler whose last action was movement is Gobsmacked or taken OOA they continue straight forward 5” and then fall Prone, dismounting the rhyfler. A “stationary” Mounted rhyfler who is Gobsmacked or taken OOA falls Prone and is then considered unmounted.
+In order to Fire the rhyfler may either stay mounted and apply their weapon’s Snapfire Modifier, or they must dismount. A rhyfler may dismount by spending a point of Pluck. They may also dismount by performing a Move Action at -1” to their Movement Allowance.
+Remounting the Autocycle can be done by either spending a point of Pluck or subtracting 1” from the unit’s Movement Allowance for that Action.
+The Movement Allowance for an Autocycle unit will be listed as two numbers, A/B. The first is the mounted MA, and the second is for the unmounted rhyfler.</description>
     </rule>
   </sharedRules>
 </gameSystem>
