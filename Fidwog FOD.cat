@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="09b3-3016-43ff-1e9e" name="Fidwog FOD" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="09b3-3016-43ff-1e9e" name="Fidwog FOD" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Sprygyt Mk3 &quot;Sketcych&quot;" hidden="false" id="9f22-dc54-42cb-6110" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -130,7 +130,7 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="30"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Marksquar" hidden="false" id="1c73-9d58-1aaa-17c8" sortIndex="0">
+    <selectionEntry type="unit" import="true" name="Marksquar" hidden="false" id="1c73-9d58-1aaa-17c8" sortIndex="0">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="35"/>
       </costs>
@@ -391,7 +391,7 @@
             <characteristic name="Engine Damage Points" typeId="df7d-5deb-8b55-3b06">2</characteristic>
             <characteristic name="Tread Armor Value" typeId="d79c-c916-a478-ba1e">5</characteristic>
             <characteristic name="Hull Armor Value" typeId="3341-ef0e-6ede-ca25">6</characteristic>
-            <characteristic name="Tread Armor Value" typeId="81b5-bb41-0b10-9d9f">4</characteristic>
+            <characteristic name="Engine Armore Vlaue" typeId="81b5-bb41-0b10-9d9f">4</characteristic>
           </characteristics>
         </profile>
         <profile name="Front" typeId="bf17-75fe-032b-a8eb" typeName="Squad Tractor Damage Area" hidden="false" id="4836-7be6-cea3-c291">
@@ -440,7 +440,7 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Crown Milwer" hidden="false" id="c795-65b1-3c11-1a31" type="selectionEntry" page="" targetId="6b69-ec9c-186b-bc9a"/>
+    <entryLink import="true" name="Crown Milwer" hidden="false" id="c795-65b1-3c11-1a31" type="selectionEntry" targetId="6b69-ec9c-186b-bc9a"/>
     <entryLink import="true" name="Fydo" hidden="false" id="f890-3e11-df84-af54" type="selectionEntry" targetId="9f52-bfa3-d6bf-e906"/>
     <entryLink import="true" name="Fynrydhad" hidden="false" id="f2ff-54b0-fef9-7b55" type="selectionEntry" targetId="0afd-cc7d-cee1-676c"/>
     <entryLink import="true" name="Gaefyn" hidden="false" id="3436-6570-edee-d28a" type="selectionEntry" targetId="149b-7228-131f-3b25"/>

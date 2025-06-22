@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Bogen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d73e-9bd0-b2e0-2432">
       <characteristics>
@@ -198,6 +198,9 @@
       <entryLinks>
         <entryLink import="true" name="Bogen" hidden="false" id="920a-dfa3-2cd6-c0d0" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="e7d9-b747-f71b-f94b" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Yawdryl" hidden="false" id="f4c9-2ba9-f864-43f1" sortIndex="0">
       <costs>
@@ -416,9 +419,12 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="87b7-8861-000f-7af0" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="is-caerten (Bogen)" hidden="false" id="78d2-5018-c631-4f8a" type="selectionEntry" targetId="9127-bd4d-845f-b4fd"/>
-        <entryLink import="true" name="is-caerten (Grifkis)" hidden="false" id="cbcd-c40c-1239-b030" type="selectionEntry" targetId="a46b-cfdb-2a09-09ed"/>
+        <entryLink import="true" name="is-Caerten (Bogen)" hidden="false" id="78d2-5018-c631-4f8a" type="selectionEntry" targetId="9127-bd4d-845f-b4fd"/>
+        <entryLink import="true" name="is-Caerten (Grifkis)" hidden="false" id="cbcd-c40c-1239-b030" type="selectionEntry" targetId="a46b-cfdb-2a09-09ed"/>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="b4b5-d43a-0b21-1ca0" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cook" hidden="false" id="73f3-6405-d012-f199" sortIndex="0">
       <costs>
@@ -444,6 +450,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="4b03-fd49-441d-70f3" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Musician" hidden="false" id="4f9a-8ce1-451e-e8cf" sortIndex="0">
       <categoryLinks>
@@ -509,7 +518,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="2ac4-16e0-1c2e-ba51" primary="true" name="Unit"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Bogen" hidden="false" id="3397-db86-2c6d-be28" type="selectionEntry" page="" targetId="caf9-e75a-bf81-1229"/>
+        <entryLink import="true" name="Bogen" hidden="false" id="3397-db86-2c6d-be28" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="PykPyk (X)" id="c5c4-19b2-f45f-ef0e" hidden="false" type="rule" targetId="13c8-54a0-441f-a71c"/>
@@ -572,6 +581,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="b976-2b61-7d0c-1580" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Weapon Team Loader" hidden="false" id="a91b-0f41-45dd-11b3" sortIndex="0">
       <costs>

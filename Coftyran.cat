@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="is-Caerten (Pistol, Sword)" hidden="false" id="528f-29fc-4aca-9939" defaultAmount="0" sortIndex="2">
       <constraints>
@@ -726,6 +726,9 @@
         <entryLink import="true" name="Standard Bearer (Doru)" hidden="false" id="0d14-ea83-f125-f964" type="selectionEntry" targetId="65c9-c497-00a1-8a9b"/>
         <entryLink import="true" name="Standard Bearer (Harlech)" hidden="false" id="c2cd-f153-475a-1898" type="selectionEntry" targetId="35cb-cdb3-8c22-5c68"/>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="07cb-cbaf-c4f2-48bf" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

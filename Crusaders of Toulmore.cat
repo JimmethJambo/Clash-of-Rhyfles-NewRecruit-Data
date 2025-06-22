@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bogen" hidden="false" id="2f9a-306b-0eb2-1eb1" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -143,6 +143,9 @@
       <entryLinks>
         <entryLink import="true" name="Ryshi" hidden="false" id="7ff4-3c86-9a2a-8327" type="selectionEntry" targetId="86ba-c3ec-b984-69df"/>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="1f97-fd64-d998-8a08" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="LMG Rhyfler" hidden="false" id="ee79-0d27-a6b0-8112" sortIndex="3">
       <costs>
@@ -165,6 +168,9 @@
       <entryLinks>
         <entryLink import="true" name="H-11a" hidden="false" id="2780-4be6-987e-982d" type="selectionEntry" targetId="4a4d-27cc-cbe2-767f"/>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="44da-99ec-d01b-8822" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Squad Marksquar" hidden="false" id="a6a0-f6bf-71aa-8a90" sortIndex="3">
       <costs>
@@ -191,6 +197,9 @@
       <entryLinks>
         <entryLink import="true" name="Bogen" hidden="false" id="f9d9-c85b-f496-fa7c" type="selectionEntry" targetId="2f9a-306b-0eb2-1eb1"/>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="eee2-c3db-6185-e18b" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mortar Rhyfler" hidden="false" id="4080-63f1-136f-d0ad" sortIndex="3">
       <costs>
@@ -202,6 +211,9 @@
       <entryLinks>
         <entryLink import="true" name="MTR(22)" hidden="false" id="90dc-260e-a1bc-0b99" type="selectionEntry" targetId="be4f-063f-746f-1d75"/>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="6194-e5be-5265-8e6b" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Milwer" hidden="false" id="031a-eab0-c412-d009" sortIndex="3">
       <costs>
@@ -227,6 +239,9 @@
       <infoLinks>
         <infoLink name="Leader (X/Y)" id="d3f6-7ac9-9bf5-25a9" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="b7a3-0e71-576b-5d7c" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Yawdryl" hidden="false" id="6278-60cb-8ea4-6f98" sortIndex="3">
       <costs>
@@ -254,6 +269,9 @@
         <infoLink name="Leader (X/Y)" id="e91c-cfb5-7590-e5f7" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
         <infoLink name="Élan" id="5023-3b0a-533f-ed9a" hidden="false" type="rule" targetId="4303-0082-2b47-ee41"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="c4e4-1005-4c9c-883e" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="is-Caerten" hidden="false" id="6157-e7d6-9c8e-7a0c" sortIndex="3">
       <costs>
@@ -279,6 +297,9 @@
       <infoLinks>
         <infoLink name="Leader (X/Y)" id="62b1-cc96-d164-63c7" hidden="false" type="rule" targetId="ba90-37ff-4384-2bc5"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="83a8-3b8f-9d22-9faf" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Standard Bearer" hidden="false" id="2f11-9c54-d9f8-f911" sortIndex="3">
       <costs>
@@ -304,6 +325,9 @@
       <infoLinks>
         <infoLink name="Standard" id="916b-b847-edc4-b301" hidden="false" type="rule" targetId="2437-22be-ccb6-5ef4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="3491-3bac-d201-268f" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Squirrel Handler" hidden="false" id="2fbc-f079-aaaa-c471" sortIndex="3">
       <costs>
@@ -329,6 +353,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="636a-3005-8821-e964" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>

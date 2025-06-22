@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b713-2102-f63a-13bd" name="Gloam Hyyn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b713-2102-f63a-13bd" name="Gloam Hyyn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Harlech Carbine" hidden="false" id="a6ad-eeb2-2c68-04d1" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -349,7 +349,7 @@
             <characteristic name="Engine Damage Points" typeId="df7d-5deb-8b55-3b06">2</characteristic>
             <characteristic name="Tread Armor Value" typeId="d79c-c916-a478-ba1e"/>
             <characteristic name="Hull Armor Value" typeId="3341-ef0e-6ede-ca25">7</characteristic>
-            <characteristic name="Tread Armor Value" typeId="81b5-bb41-0b10-9d9f">5</characteristic>
+            <characteristic name="Engine Armore Vlaue" typeId="81b5-bb41-0b10-9d9f">5</characteristic>
           </characteristics>
         </profile>
         <profile name="Rear" typeId="bf17-75fe-032b-a8eb" typeName="Squad Tractor Damage Area" hidden="false" id="479c-8fae-0420-80dc">
@@ -381,6 +381,9 @@
         <infoLink name="Squad Tractor" id="df38-ce5c-7808-c1ae" hidden="false" type="rule" targetId="793f-4b88-e564-ce73"/>
         <infoLink name="Turretless" id="e7ab-232f-bd88-04d0" hidden="false" type="rule" targetId="a3fc-1bc1-8cfe-1886"/>
       </infoLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="95"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="44mm Rifled Gun" hidden="false" id="4606-e0e5-b13d-af18" sortIndex="1" defaultAmount="1">
       <profiles>

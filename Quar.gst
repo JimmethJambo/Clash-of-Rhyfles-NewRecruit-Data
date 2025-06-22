@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
+<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
   <categoryEntries>
     <categoryEntry name="Unit" id="de6b-6ec2-9294-541d" hidden="false"/>
   </categoryEntries>
@@ -41,7 +41,7 @@
         <characteristicType name="Engine Damage Points" id="df7d-5deb-8b55-3b06"/>
         <characteristicType name="Tread Armor Value" id="d79c-c916-a478-ba1e"/>
         <characteristicType name="Hull Armor Value" id="3341-ef0e-6ede-ca25"/>
-        <characteristicType name="Tread Armor Value" id="81b5-bb41-0b10-9d9f"/>
+        <characteristicType name="Engine Armore Vlaue" id="81b5-bb41-0b10-9d9f"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Squad Tractor Damage Area" id="bf17-75fe-032b-a8eb" hidden="false">
