@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bogen" hidden="false" id="2f9a-306b-0eb2-1eb1" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -195,7 +195,7 @@
         <infoLink name="Dead-Eye" id="10f8-25c4-3bf0-2bbc" hidden="false" type="rule" targetId="d190-c1b5-6dbb-6129"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Bogen" hidden="false" id="f9d9-c85b-f496-fa7c" type="selectionEntry" targetId="2f9a-306b-0eb2-1eb1"/>
+        <entryLink import="true" name="Harlech" hidden="false" id="c727-4112-5358-96bd" type="selectionEntry" targetId="ef81-42d0-b046-8acf"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="eee2-c3db-6185-e18b" primary="true" name="Unit"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Bogen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d73e-9bd0-b2e0-2432">
       <characteristics>
@@ -226,6 +226,9 @@
       <entryLinks>
         <entryLink import="true" name="Bogen" hidden="false" id="890b-18a5-dbfb-6de9" type="selectionEntry" targetId="caf9-e75a-bf81-1229"/>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="de6b-6ec2-9294-541d" id="c09a-bd9b-6479-b96f" primary="true" name="Unit"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="is-Caerten (Grifkis)" hidden="false" id="a46b-cfdb-2a09-09ed" sortIndex="2">
       <categoryLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b713-2102-f63a-13bd" name="Gloam Hyyn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b713-2102-f63a-13bd" name="Gloam Hyyn" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Harlech Carbine" hidden="false" id="a6ad-eeb2-2c68-04d1" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -417,5 +417,6 @@
     <entryLink import="true" name="Standard Bearer" hidden="false" id="edbb-e025-5052-e74b" type="selectionEntry" targetId="9b21-1283-0244-5744"/>
     <entryLink import="true" name="Trapper" hidden="false" id="4aaf-f944-eee5-bd29" type="selectionEntry" targetId="5492-bce3-ab4b-17a6"/>
     <entryLink import="true" name="Yawdryl" hidden="false" id="72e9-05d6-a6f2-ff20" type="selectionEntry" targetId="3fef-3646-11d6-31ee"/>
+    <entryLink import="true" name="Squeedle" hidden="false" id="3621-ecd4-8605-18f6" type="selectionEntry" targetId="cd04-6cd2-e7b4-d872"/>
   </entryLinks>
 </catalogue>
