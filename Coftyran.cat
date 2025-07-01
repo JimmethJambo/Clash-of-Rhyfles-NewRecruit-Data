@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="8579-b42c-53b1-1cba" name="Coftyran" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="is-Caerten (Pistol, Sword)" hidden="false" id="528f-29fc-4aca-9939" defaultAmount="0" sortIndex="2">
       <constraints>
@@ -730,6 +730,64 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="07cb-cbaf-c4f2-48bf" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Chyweethl" hidden="false" id="4e70-2ce5-d3fc-1f5f">
+      <categoryLinks>
+        <categoryLink targetId="e009-498c-bf4e-66d2" id="1255-06cb-ce20-1ca2" primary="true" name="Tractor"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="155"/>
+      </costs>
+      <profiles>
+        <profile name="Chyweethl" typeId="c0d6-dd04-e4e2-90bb" typeName="Tractor" hidden="false" id="2e90-ffcd-02b6-dacb">
+          <characteristics>
+            <characteristic name="Crew" typeId="dd29-0845-6869-58e6">3</characteristic>
+            <characteristic name="Skill" typeId="7171-15a3-3392-26c7">12</characteristic>
+            <characteristic name="MA" typeId="8112-28ba-c9a3-5714">4</characteristic>
+            <characteristic name="Abilities" typeId="46a0-fd12-ff7d-1a6f">Turretless</characteristic>
+            <characteristic name="Tread Damage Points" typeId="b554-5ae2-03ab-4105">4</characteristic>
+            <characteristic name="Hull Damage Points" typeId="0269-a706-2bea-6c85">3</characteristic>
+            <characteristic name="Engine Damage Points" typeId="df7d-5deb-8b55-3b06">2</characteristic>
+            <characteristic name="Tread Armor Value" typeId="d79c-c916-a478-ba1e">7</characteristic>
+            <characteristic name="Hull Armor Value" typeId="3341-ef0e-6ede-ca25">5</characteristic>
+            <characteristic name="Engine Armore Vlaue" typeId="81b5-bb41-0b10-9d9f">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="83mm Smoothbore Canon" typeId="b654-1c6a-7803-6882" typeName="Tractor Weapon" hidden="false" id="6c65-fadf-c528-8462">
+          <characteristics>
+            <characteristic name="Range" typeId="206b-98a7-3ceb-bc0e">NA</characteristic>
+            <characteristic name="Arc" typeId="7f52-7175-881e-a429">90</characteristic>
+            <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Slow Reload, Blas (2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="d93b-53ba-c1ef-5a32">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-4</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">5-6</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699"/>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="0d79-71d3-c4a3-e7b9">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-5</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">6</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699"/>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="2dd9-97fc-e40c-0ae4">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-4</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801"/>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">5-6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X,Y)" id="4afe-4c7f-d844-c704" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Slow Reload" id="9295-ccc1-8aec-54d6" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
+        <infoLink name="Playtest Profile" id="18a0-f0c4-a6ae-8b5b" hidden="false" type="rule" targetId="a1d3-d6aa-6b8f-d230"/>
+        <infoLink name="Turretless" id="9d89-6ed3-232e-32b7" hidden="false" type="rule" targetId="a3fc-1bc1-8cfe-1886"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Pistol" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="99bd-7fcc-169d-3745">
@@ -788,5 +846,6 @@
     <entryLink import="true" name="Trench Raider Yawdryl" hidden="false" id="e90e-52cc-4941-8408" type="selectionEntry" targetId="0929-62c9-a772-d59b"/>
     <entryLink import="true" name="is-Caerten" hidden="false" id="3fa2-b710-fa45-30bd" type="selectionEntry" targetId="ead3-ef18-6652-cd52"/>
     <entryLink import="true" name="Standard Bearer" hidden="false" id="559f-e484-7603-65d8" type="selectionEntry" targetId="3f25-7991-fbc9-d00b"/>
+    <entryLink import="true" name="Chyweethl" hidden="false" id="d231-6d73-aaaa-77e8" type="selectionEntry" targetId="4e70-2ce5-d3fc-1f5f"/>
   </entryLinks>
 </catalogue>

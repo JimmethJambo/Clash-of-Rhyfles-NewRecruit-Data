@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="da4e-ede1-f965-99f0" name="Gwynt" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="da4e-ede1-f965-99f0" name="Gwynt" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Harlech" hidden="false" id="01b4-6a30-91e9-e547" sortIndex="3" defaultAmount="1">
       <profiles>
@@ -223,7 +223,7 @@
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="34"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="RCO Gunner" hidden="false" id="64aa-280f-dad1-7fee" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="RCO Gunner" hidden="false" id="64aa-280f-dad1-7fee">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="70"/>
       </costs>
@@ -248,7 +248,7 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="cfc6-e803-28d1-98fc" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="is-Caerten" hidden="false" id="84e1-d592-6e52-15bb" sortIndex="">
+    <selectionEntry type="unit" import="true" name="is-Caerten" hidden="false" id="84e1-d592-6e52-15bb">
       <costs>
         <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="28"/>
       </costs>
@@ -304,7 +304,7 @@
         <infoLink name="Standard" id="95ca-a8da-f40f-835b" hidden="false" type="rule" targetId="2437-22be-ccb6-5ef4"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Squirrel Handler" hidden="false" id="bd16-3d60-6984-082b" sortIndex="">
+    <selectionEntry type="unit" import="true" name="Squirrel Handler" hidden="false" id="bd16-3d60-6984-082b">
       <categoryLinks>
         <categoryLink targetId="de6b-6ec2-9294-541d" id="132d-1a13-6df6-f216" primary="true" name="Unit"/>
       </categoryLinks>
@@ -332,6 +332,64 @@
         <infoLink name="PykPyk (X)" id="8409-b484-1be1-9c6c" hidden="false" type="rule" targetId="13c8-54a0-441f-a71c"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Aerfen" hidden="false" id="ac43-8dae-1978-a487">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="160"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e009-498c-bf4e-66d2" id="4af1-b405-40af-ac52" primary="true" name="Tractor"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Aerfen" typeId="c0d6-dd04-e4e2-90bb" typeName="Tractor" hidden="false" id="35d6-ccf7-1068-a558">
+          <characteristics>
+            <characteristic name="Crew" typeId="dd29-0845-6869-58e6">3</characteristic>
+            <characteristic name="Skill" typeId="7171-15a3-3392-26c7">12</characteristic>
+            <characteristic name="MA" typeId="8112-28ba-c9a3-5714">4</characteristic>
+            <characteristic name="Abilities" typeId="46a0-fd12-ff7d-1a6f">turretless</characteristic>
+            <characteristic name="Tread Damage Points" typeId="b554-5ae2-03ab-4105">3</characteristic>
+            <characteristic name="Hull Damage Points" typeId="0269-a706-2bea-6c85">2</characteristic>
+            <characteristic name="Engine Damage Points" typeId="df7d-5deb-8b55-3b06">2</characteristic>
+            <characteristic name="Tread Armor Value" typeId="d79c-c916-a478-ba1e">6</characteristic>
+            <characteristic name="Hull Armor Value" typeId="3341-ef0e-6ede-ca25">7</characteristic>
+            <characteristic name="Engine Armore Vlaue" typeId="81b5-bb41-0b10-9d9f">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="ec77-0b50-0308-489f">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-6</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699"/>
+          </characteristics>
+        </profile>
+        <profile name="82mm Lynis Tube Mk2" typeId="b654-1c6a-7803-6882" typeName="Tractor Weapon" hidden="false" id="6502-371a-8426-9472">
+          <characteristics>
+            <characteristic name="Range" typeId="206b-98a7-3ceb-bc0e">NA</characteristic>
+            <characteristic name="Arc" typeId="7f52-7175-881e-a429">90</characteristic>
+            <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Slow Reload, Blast (2,2d6)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="c9b9-2554-1050-034e">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-4</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">5-6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="26fc-380c-7a1a-830b">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-5</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Turretless" id="625c-49ca-17bd-d134" hidden="false" type="rule" targetId="a3fc-1bc1-8cfe-1886"/>
+        <infoLink name="Playtest Profile" id="8fb8-3f75-2dcd-05ef" hidden="false" type="rule" targetId="a1d3-d6aa-6b8f-d230"/>
+        <infoLink name="Blast (X,Y)" id="93d5-35ad-9d46-34f7" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Slow Reload" id="e4d4-1cbe-741b-e37a" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Rhyfler" hidden="false" id="f51d-7856-a1b8-0af4" type="selectionEntry" targetId="03b0-a4ee-adcf-b912"/>
@@ -343,5 +401,6 @@
     <entryLink import="true" name="is-Caerten" hidden="false" id="1b0c-d9de-0cd2-ce3b" type="selectionEntry" targetId="84e1-d592-6e52-15bb"/>
     <entryLink import="true" name="Standard Bearer" hidden="false" id="db98-79c9-9245-e9b3" type="selectionEntry" targetId="32ca-9e4a-c20a-dd61"/>
     <entryLink import="true" name="Squirrel Handler" hidden="false" id="4282-78ba-51a2-b281" type="selectionEntry" targetId="bd16-3d60-6984-082b"/>
+    <entryLink import="true" name="Aerfen" hidden="false" id="484b-69a5-b3e8-0bb7" type="selectionEntry" targetId="ac43-8dae-1978-a487"/>
   </entryLinks>
 </catalogue>

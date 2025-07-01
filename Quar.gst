@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
+<gameSystem id="sys-dbd1-1d4a-43f9-1e9c" name="Quar - Clash of Rhyfles" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Jim Jambo" authorUrl="jimjambo.gay">
   <categoryEntries>
     <categoryEntry name="Unit" id="de6b-6ec2-9294-541d" hidden="false"/>
+    <categoryEntry name="Tractor" id="e009-498c-bf4e-66d2" hidden="false"/>
+    <categoryEntry name="Squad Tractor" id="5b87-53fe-4166-448b" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Army" hidden="false" id="default-force">
       <categoryLinks>
         <categoryLink name="Unit" hidden="false" id="default-force-category-link" targetId="de6b-6ec2-9294-541d"/>
+        <categoryLink name="Squad Tractor" hidden="false" id="2de1-7d46-6d4e-da48" targetId="5b87-53fe-4166-448b" type="categoryEntry"/>
+        <categoryLink name="Tractor" hidden="false" id="7b1a-d3d0-5296-c316" targetId="e009-498c-bf4e-66d2" type="categoryEntry"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -30,7 +34,7 @@
         <characteristicType name="Abilities" id="ed37-dbdc-d41b-3af6"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Squad Tractor" id="c0d6-dd04-e4e2-90bb" hidden="false">
+    <profileType name="Tractor" id="c0d6-dd04-e4e2-90bb" hidden="false">
       <characteristicTypes>
         <characteristicType name="Crew" id="dd29-0845-6869-58e6"/>
         <characteristicType name="Skill" id="7171-15a3-3392-26c7"/>
@@ -44,7 +48,7 @@
         <characteristicType name="Engine Armore Vlaue" id="81b5-bb41-0b10-9d9f"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Squad Tractor Damage Area" id="bf17-75fe-032b-a8eb" hidden="false">
+    <profileType name="Tractor Damage Area" id="bf17-75fe-032b-a8eb" hidden="false">
       <characteristicTypes>
         <characteristicType name="Tread" id="6193-4d0a-5399-c05d"/>
         <characteristicType name="Hull" id="2882-bfcc-2f15-a801"/>
@@ -281,6 +285,15 @@ Recovery Tasks - Steady, Recover</description>
 In order to Fire the rhyfler may either stay mounted and apply their weapon’s Snapfire Modifier, or they must dismount. A rhyfler may dismount by spending a point of Pluck. They may also dismount by performing a Move Action at -1” to their Movement Allowance.
 Remounting the Autocycle can be done by either spending a point of Pluck or subtracting 1” from the unit’s Movement Allowance for that Action.
 The Movement Allowance for an Autocycle unit will be listed as two numbers, A/B. The first is the mounted MA, and the second is for the unmounted rhyfler.</description>
+    </rule>
+    <rule name="Playtest Profile" id="a1d3-d6aa-6b8f-d230" hidden="false">
+      <description>This content comes from the tractor playtest only.
+
+
+If you are using it, you should confirm with your opponent that they are okay with using this content.</description>
+    </rule>
+    <rule name="Closed Hull" id="f20b-dfaa-f5ed-a396" hidden="false">
+      <description>This tractor does not have a top hatch or other easy access. It is always considered Buttoned Up, so the Crew Commander is limited by that status for Spotting and Defending against assaults.</description>
     </rule>
   </sharedRules>
 </gameSystem>

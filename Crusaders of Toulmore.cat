@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4210-c08d-7f26-7174" name="Crusaders of Toulmore" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bogen" hidden="false" id="2f9a-306b-0eb2-1eb1" sortIndex="1" defaultAmount="1">
       <profiles>
@@ -357,6 +357,64 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="636a-3005-8821-e964" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Twaen-Hyr" hidden="false" id="87d4-1d62-0fd5-2ed3">
+      <categoryLinks>
+        <categoryLink targetId="e009-498c-bf4e-66d2" id="c86c-5dd4-5547-5b69" primary="true" name="Tractor"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="180"/>
+      </costs>
+      <profiles>
+        <profile name="Twaen-Hyr" typeId="c0d6-dd04-e4e2-90bb" typeName="Tractor" hidden="false" id="01e9-6f4e-c014-79dc">
+          <characteristics>
+            <characteristic name="Crew" typeId="dd29-0845-6869-58e6">3</characteristic>
+            <characteristic name="Skill" typeId="7171-15a3-3392-26c7">12</characteristic>
+            <characteristic name="MA" typeId="8112-28ba-c9a3-5714">5</characteristic>
+            <characteristic name="Abilities" typeId="46a0-fd12-ff7d-1a6f">Turret</characteristic>
+            <characteristic name="Tread Damage Points" typeId="b554-5ae2-03ab-4105">3</characteristic>
+            <characteristic name="Hull Damage Points" typeId="0269-a706-2bea-6c85">3</characteristic>
+            <characteristic name="Engine Damage Points" typeId="df7d-5deb-8b55-3b06">2</characteristic>
+            <characteristic name="Tread Armor Value" typeId="d79c-c916-a478-ba1e">7</characteristic>
+            <characteristic name="Hull Armor Value" typeId="3341-ef0e-6ede-ca25">7</characteristic>
+            <characteristic name="Engine Armore Vlaue" typeId="81b5-bb41-0b10-9d9f">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="72mm TLZ-RT" typeId="b654-1c6a-7803-6882" typeName="Tractor Weapon" hidden="false" id="438c-e28b-87c9-7b55">
+          <characteristics>
+            <characteristic name="Range" typeId="206b-98a7-3ceb-bc0e">NA</characteristic>
+            <characteristic name="Arc" typeId="7f52-7175-881e-a429">90</characteristic>
+            <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Slow Reload, Blast (2,2d6)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="1f90-f01d-be57-001b">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-6</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699"/>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="a5a3-7cd1-32dd-5460">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-6</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699"/>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="a47d-7ea8-17d3-2fd2">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-4</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">5-6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Turret" id="1b07-f797-6a9c-4b95" hidden="false" type="rule" targetId="15ec-d221-5e3c-04d7"/>
+        <infoLink name="Slow Reload" id="ee45-3c65-a4e3-1414" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
+        <infoLink name="Blast (X,Y)" id="5055-892b-dcac-2629" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Playtest Profile" id="d5e4-1f15-985a-5ce2" hidden="false" type="rule" targetId="a1d3-d6aa-6b8f-d230"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Rhyfler  ( Bogen)" hidden="false" id="050f-f886-7240-d569" type="selectionEntry" targetId="1522-d9d9-806e-2219"/>
@@ -369,5 +427,6 @@
     <entryLink import="true" name="Yawdryl" hidden="false" id="c06e-444d-64d7-2528" type="selectionEntry" targetId="6278-60cb-8ea4-6f98"/>
     <entryLink import="true" name="Standard Bearer" hidden="false" id="cf27-e026-7e10-fa06" type="selectionEntry" targetId="2f11-9c54-d9f8-f911"/>
     <entryLink import="true" name="Squirrel Handler" hidden="false" id="c52b-18ab-2730-4fae" type="selectionEntry" targetId="2fbc-f079-aaaa-c471"/>
+    <entryLink import="true" name="Twaen-Hyr" hidden="false" id="aa7c-22cd-097c-abfb" type="selectionEntry" targetId="87d4-1d62-0fd5-2ed3"/>
   </entryLinks>
 </catalogue>

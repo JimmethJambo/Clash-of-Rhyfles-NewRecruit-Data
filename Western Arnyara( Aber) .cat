@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a06a-3543-ab12-f426" name="Western Arnyara (Aber)" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a06a-3543-ab12-f426" name="Western Arnyara (Aber)" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="MAR SMG" hidden="false" id="2288-b2d1-c319-324a" defaultAmount="1" sortIndex="3">
       <constraints>
@@ -292,6 +292,64 @@
         <categoryLink targetId="de6b-6ec2-9294-541d" id="32f8-8aad-2103-76b6" primary="true" name="Unit"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Daen-Fen" hidden="false" id="cf6a-30c8-6663-c856">
+      <categoryLinks>
+        <categoryLink targetId="e009-498c-bf4e-66d2" id="441b-0366-10dd-b65f" primary="true" name="Tractor"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="190"/>
+      </costs>
+      <profiles>
+        <profile name="Daen-Fen" typeId="c0d6-dd04-e4e2-90bb" typeName="Tractor" hidden="false" id="56ab-0690-9ca1-4ef9">
+          <characteristics>
+            <characteristic name="Crew" typeId="dd29-0845-6869-58e6">3</characteristic>
+            <characteristic name="Skill" typeId="7171-15a3-3392-26c7">11</characteristic>
+            <characteristic name="MA" typeId="8112-28ba-c9a3-5714">4</characteristic>
+            <characteristic name="Abilities" typeId="46a0-fd12-ff7d-1a6f">Turret, Closed Hull</characteristic>
+            <characteristic name="Tread Damage Points" typeId="b554-5ae2-03ab-4105">3</characteristic>
+            <characteristic name="Hull Damage Points" typeId="0269-a706-2bea-6c85">4</characteristic>
+            <characteristic name="Engine Damage Points" typeId="df7d-5deb-8b55-3b06">2</characteristic>
+            <characteristic name="Tread Armor Value" typeId="d79c-c916-a478-ba1e">7</characteristic>
+            <characteristic name="Hull Armor Value" typeId="3341-ef0e-6ede-ca25">7</characteristic>
+            <characteristic name="Engine Armore Vlaue" typeId="81b5-bb41-0b10-9d9f">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Daen-Fen" typeId="b654-1c6a-7803-6882" typeName="Tractor Weapon" hidden="false" id="874f-587e-52b1-ec13">
+          <characteristics>
+            <characteristic name="Range" typeId="206b-98a7-3ceb-bc0e">NA</characteristic>
+            <characteristic name="Arc" typeId="7f52-7175-881e-a429">90</characteristic>
+            <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Slow Reload, Blast (2,2d6-1)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Front" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="7799-2319-6795-ee32">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">2-6</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699"/>
+          </characteristics>
+        </profile>
+        <profile name="Rear" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="4a79-ce36-3657-f77d">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">2-3</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">4-6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Side" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="799a-4be2-9f25-711f">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-4</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">5-6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Closed Hull" id="8408-d625-2695-89fb" hidden="false" type="rule" targetId="f20b-dfaa-f5ed-a396"/>
+        <infoLink name="Turret" id="05e9-bf32-f00c-09e5" hidden="false" type="rule" targetId="15ec-d221-5e3c-04d7"/>
+        <infoLink name="Blast (X,Y)" id="d126-ab71-d76a-0d79" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Slow Reload" id="1e99-ad34-d3d2-844a" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Able (2 GREE Pistols)" hidden="false" id="ba8c-8976-97bf-e683" type="selectionEntry" targetId="fb07-a7be-a5e0-a474"/>
@@ -303,5 +361,6 @@
     <entryLink import="true" name="Bosun" hidden="false" id="3b55-b6ba-8edb-2104" type="selectionEntry" targetId="39b3-3890-69f6-89e5"/>
     <entryLink import="true" name="House Lord" hidden="false" id="1362-266d-2d96-33fa" type="selectionEntry" targetId="c83a-81ec-50cf-1577"/>
     <entryLink import="true" name="Mate" hidden="false" id="ed88-adc2-0457-2101" type="selectionEntry" targetId="cc24-d191-97b4-f664"/>
+    <entryLink import="true" name="Daen-Fen" hidden="false" id="f1f1-4b38-89a9-a021" type="selectionEntry" targetId="cf6a-30c8-6663-c856"/>
   </entryLinks>
 </catalogue>

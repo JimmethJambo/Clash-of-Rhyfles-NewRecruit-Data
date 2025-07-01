@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="80cd-b846-90e0-dd6f" name="Crusaders" gameSystemId="sys-dbd1-1d4a-43f9-1e9c" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Bogen" typeId="0b63-6947-fb08-66eb" typeName="Weapon" hidden="false" id="d73e-9bd0-b2e0-2432">
       <characteristics>
@@ -799,6 +799,64 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name=" Ailthean" hidden="false" id="b74c-184d-c68f-9378" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="0bc1-1233-3e53-72ca" value="185"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e009-498c-bf4e-66d2" id="ea72-8526-d599-b543" primary="true" name="Tractor"/>
+      </categoryLinks>
+      <profiles>
+        <profile name=" Ailthean" typeId="c0d6-dd04-e4e2-90bb" typeName="Tractor" hidden="false" id="2f8d-a85f-4a31-1f5c">
+          <characteristics>
+            <characteristic name="Crew" typeId="dd29-0845-6869-58e6">3</characteristic>
+            <characteristic name="Skill" typeId="7171-15a3-3392-26c7">12</characteristic>
+            <characteristic name="MA" typeId="8112-28ba-c9a3-5714">4</characteristic>
+            <characteristic name="Abilities" typeId="46a0-fd12-ff7d-1a6f">Turret</characteristic>
+            <characteristic name="Tread Damage Points" typeId="b554-5ae2-03ab-4105">3</characteristic>
+            <characteristic name="Hull Damage Points" typeId="0269-a706-2bea-6c85">3</characteristic>
+            <characteristic name="Engine Damage Points" typeId="df7d-5deb-8b55-3b06">2</characteristic>
+            <characteristic name="Tread Armor Value" typeId="d79c-c916-a478-ba1e">8</characteristic>
+            <characteristic name="Hull Armor Value" typeId="3341-ef0e-6ede-ca25">7</characteristic>
+            <characteristic name="Engine Armore Vlaue" typeId="81b5-bb41-0b10-9d9f">6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name=" Krynger 78mm gun" typeId="b654-1c6a-7803-6882" typeName="Tractor Weapon" hidden="false" id="d7e3-3c4b-c1d2-2937">
+          <characteristics>
+            <characteristic name="Range" typeId="206b-98a7-3ceb-bc0e">NA</characteristic>
+            <characteristic name="Arc" typeId="7f52-7175-881e-a429">90</characteristic>
+            <characteristic name="Abilities" typeId="0095-18c0-009f-e488">Slow Reload, Blast (2, 2d6)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name=" Rear" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="e127-968f-76bd-b7df">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">4-6</characteristic>
+          </characteristics>
+        </profile>
+        <profile name=" Front" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="4664-1510-5c09-09b5">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-6</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699"/>
+          </characteristics>
+        </profile>
+        <profile name=" Side" typeId="bf17-75fe-032b-a8eb" typeName="Tractor Damage Area" hidden="false" id="1000-2379-d185-d339">
+          <characteristics>
+            <characteristic name="Tread" typeId="6193-4d0a-5399-c05d">1-2</characteristic>
+            <characteristic name="Hull" typeId="2882-bfcc-2f15-a801">3-4</characteristic>
+            <characteristic name="Engine" typeId="609f-652d-ea95-f699">5-6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Turret" id="24ac-9d8b-9ca3-e547" hidden="false" type="rule" targetId="15ec-d221-5e3c-04d7"/>
+        <infoLink name="Slow Reload" id="555f-f7d3-6632-d131" hidden="false" type="rule" targetId="d313-5d37-5ae4-7b1f"/>
+        <infoLink name="Blast (X,Y)" id="2164-fa64-2e25-4ee8" hidden="false" type="rule" targetId="b4b8-45d7-e9bb-1444"/>
+        <infoLink name="Playtest Profile" id="5527-20a1-ef6e-a816" hidden="false" type="rule" targetId="a1d3-d6aa-6b8f-d230"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Rhyfler (Bogen)" hidden="false" id="3655-aaf6-a5b0-7814" type="selectionEntry" targetId="ba33-bdfb-fce5-f396"/>
@@ -812,7 +870,6 @@
     <entryLink import="true" name="Torpedo Rhyfler" hidden="false" id="dd70-cc5e-ea87-8100" type="selectionEntry" targetId="28f0-2c0b-8528-0650"/>
     <entryLink import="true" name="Standard Bearer" hidden="false" id="ef63-40b3-f6c4-94d2" type="selectionEntry" targetId="20e3-2b59-1fcb-e6a8"/>
     <entryLink import="true" name="Squirrel Handler" hidden="false" id="89fc-7cbd-86e4-3608" type="selectionEntry" targetId="452d-8b67-afb0-22de"/>
-    <entryLink import="true" name="Squad Marksquar" hidden="false" id="fe0e-22f5-7579-bed3" type="selectionEntry" targetId="2997-5fb1-6ae7-94c8"/>
     <entryLink import="true" name="Pathfinder (Bogen)" hidden="false" id="482d-6dd2-cab9-c26e" type="selectionEntry" targetId="40a9-7c5f-0b9a-6ad8"/>
     <entryLink import="true" name="Pathfinder (Shotgun)" hidden="false" id="cd1e-04a6-67ee-d6ac" type="selectionEntry" targetId="3fbb-da68-ef51-e220"/>
     <entryLink import="true" name="Pathfinder Yawdryl" hidden="false" id="decd-fc78-7f20-aebc" type="selectionEntry" targetId="5ef9-a50f-9960-f49d"/>
@@ -823,6 +880,7 @@
     <entryLink import="true" name="LMG Rhyfler" hidden="false" id="98f2-ea05-edd7-6d81" type="selectionEntry" targetId="fe54-8a8c-87db-ffec"/>
     <entryLink import="true" name="Master Yawdryl" hidden="false" id="1188-0396-6c78-3ad8" type="selectionEntry" targetId="904b-3278-1d82-aff3"/>
     <entryLink import="true" name="Cook" hidden="false" id="23ef-704b-42fe-9e90" type="selectionEntry" targetId="73f3-6405-d012-f199"/>
+    <entryLink import="true" name=" Ailthean" hidden="false" id="c6f9-991b-5c4d-2826" type="selectionEntry" targetId="b74c-184d-c68f-9378"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Pathfinder" id="8e16-bde7-3ecc-3a44" hidden="false"/>
